@@ -107,7 +107,7 @@ header {
     overflow: hidden;
 }
 
-.img_perfil {
+.perfil_img {
     width: 100%;
     height: auto;
 }
@@ -121,7 +121,7 @@ header {
     position: absolute;
     bottom: -2px;
     left: 0;
-    transition: width 0.3s;
+    transition: 0.3s;
   }
   
   .item a:hover::after {
@@ -140,5 +140,450 @@ header {
   .contenedor_img:hover{
     cursor: pointer;
   }
+
+  /* LAYAOUT*/
+/* CONTENEDOR PRINCIPAL */
+.contenedor_principal {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px; 
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  /*Sidebar */
+  .sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 900px;
+  }
+  
+  /* perfil - sidebar :) */
+  .perfil_sidebar {
+    text-align: center;
+  }
+  
+  .img_portada {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .img_perfil {
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -35px;
+    border: 3px solid #ffffff;
+  }
+  
+  .titulo_perfil {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold; 
+  }
+  
+  .subtitulo_perfil {
+    font-size: 13px; 
+    color: #777;
+  }
+  
+ 
+  .lista_info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .datos_perfil_sidebar{
+    font-size: 12px; 
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .lista_info span {
+    font-weight: bold;
+    color: steelblue;
+  }
+  
+
+  .enlaces_perfil{
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+  }
+  .enlace_sidebar i{
+    font-size: 20px;
+    transition: 500ms;
+  }
+  .enlace_sidebar:hover{
+    scale: 1.1;
+  }
+  .enlace_sidebar {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    text-decoration: none;
+    gap: 5px;
+    color: steelblue;
+    transition: 500ms;
+  }
+
+  .enlaces_perfil img {
+    width: 14px; 
+    
+    margin-right: 8px;
+  }
+  
+  .actividad_reciente {
+    margin-top: 20px;
+  }
+  
+  .titulo_seccion {
+    font-size: 14px; 
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline; 
+  }
+  
+  .actividad_reciente a {
+    display: block;
+    font-size: 12px; 
+    color: #555;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  
+  .actividad_reciente a:hover {
+    color: #0073b1;
+  }
+  
+  .link_descubrir_mas {
+    display: block;
+    font-size: 13px;
+    color: #0073b1;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: underline;
+  }
+  
+
+/*               MAIN             */
+
+.contenido-principal {
+    background-color: #f3f2ef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .crear-publicacion {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .input-publicacion {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .img-perfil-publicacion {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .input-publicacion-texto {
+    width: 100%;
+    padding: 10px;
+    font-size: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent; 
+    outline: none;
+  }
+  
+  .input-publicacion-texto::placeholder {
+    color: #888;
+  }
+.acciones-publicacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.accion-item {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding:10px 0;
+    align-items: center;
+    transition: 0.7s;
+  }
+  .enlace_main{
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+
+  .acciones-publicacion .link_post {
+    color: #e1e1e1;
+    text-decoration: none;
+  }
+  .acciones-publicacion .bx{
+  font-size: 25px;
+  }
+  .foto{
+    border-top: 0.5px solid #ccc;
+    border-right: 0.5px solid #ccc;
+}
+.video, .evento{
+    border-top: 0.5px solid #ccc;
+    border-right: 0.5px solid #ccc;
+  }
+
+  .post{
+    border-top: 0.5px solid #ccc ;
+    background-color: #0073b1;
+  }
+  .accion-item:hover{
+    background: #ccc;
+    cursor: pointer;
+  }
+
+  /*                                                publicaciones       FEED            */
+
+  .feed-publicaciones {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .publicacion {
+    border-bottom: 1px solid #e1e1e1; 
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .encabezado-publicacion {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .info-publicacion {
+    margin-left: 10px;
+  }
+  
+  .texto_feed {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .parrafo_feed,.span_reacciones {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .span_feed {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .opciones-publicacion i {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .opciones-publicacion i:hover {
+    color: #0073b1;
+  }
+
+  .parrafo_contenido {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .img-publicacion {
+    width: 700px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+.reacciones_publicaciones{
+    display: flex;
+    margin-right: 5px;
+    justify-content:start;
+     align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    gap: 4px;
+    padding-left:10px;
+    padding-bottom: 10px;
+  }
+.img_perfil_post_comentarios{
+    width: 30px;
+    height: 30px;
+}
+  .comentarios_post{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .enlace_post{
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+
+  /*                            ASIDE                              */
+
+  .barra-lateral {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+}
+
+.noticias-tendencia {
+    margin-bottom: 20px;
+}
+
+.noticias-tendencia h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.noticias-tendencia a {
+    display: block;
+    color: steelblue;
+    text-decoration: none;
+    margin-bottom: 5px; 
+    transition: color 0.3s; 
+}
+
+.noticias-tendencia a:hover {
+    color: steelblue; 
+}
+
+.noticias-tendencia span {
+    display: block;
+    font-size: 12px; 
+    color: #777;
+}
+
+.icono-informacion {
+    width: 100%;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.fijo {
+    margin-top: 20px; 
+}
+
+.anuncio-lateral {
+    background-color: #f3f2ef;
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+
+.anuncio {
+    display: block;
+    color: #777; 
+}
+
+.anuncio-lateral p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.anuncio-lateral .imagenes-anuncio {
+    display: flex;
+    gap: 10px;
+}
+
+.anuncio-lateral img {
+    width: 30px; 
+    border-radius: 5px; 
+}
+
+.bb{
+    display: block;
+    margin: 20px 0; 
+}
+
+.anuncio-lateral .enlace-anuncio {
+    display: inline-block;
+    color: steelblue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.anuncio-lateral .enlace-anuncio:hover {
+    color: steelblue;
+}
+.enlaces-utiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.links_aside {
+    color: steelblue;
+    text-decoration: none; 
+    margin: 5px 0; 
+    transition: color 0.3s; 
+}
+
+.links_aside:hover {
+    color: steelblue; 
+}
+.mensaje {
+    display: flex; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo_mensaje{
+    width: 20px; 
+    margin-right: 10px; 
+}
+
+.parrafo_mensaje{
+    font-size: 12px;
+    color: #777; 
+}
 
   
