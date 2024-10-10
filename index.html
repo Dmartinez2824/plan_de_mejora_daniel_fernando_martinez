@@ -58,7 +58,7 @@
                     </ul>
                     <div class="contenedor_perfil">
                         <div class="contenedor_img">
-                            <img src="IMG/user-1.png" alt="user" class="img_perfil">
+                            <img src="IMG/foto_perfil.jpg" alt="user" class="perfil_img">
                         </div>
                     </div>
                 </div>
@@ -69,94 +69,175 @@
 
     <section class="contenedor_principal">
         <!-- Sidebar -->
-        <aside>
-                    <div class="perfil-sidebar">
-            <img src="IMG/foto_portada.png" width="100%">
-            <div class="info-perfil">
-                <img src="images/user-1.png">
-                <h1>John Vanagandr</h1>
-                <h3>Desarrollador Web</h3>
-                <ul>
-                <li>Vistas de tu perfil <span>52</span></li>
-                <li>Vistas de tus publicaciones <span>810</span></li>
-                <li>Tus conexiones <span>205</span></li>
-                </ul>
+        <div class="sidebar">
+            <div class="perfil_sidebar">
+                <img src="IMG/portada_foto.jpg" class="img_portada">
+                <div class="info_perfil">
+                    <img src="IMG/foto_perfil.jpg" class="img_perfil">
+                    <h2 class="titulo_perfil">Daniel Martinez</h2>
+                    <h3 class="subtitulo_perfil">Desarrollador Junior <br> Full-stack</h3>
+                    <ul class="lista_info">
+                        <li class="datos_perfil_sidebar">Vistas de tu perfil <span class="num_vistas_perfil">52</span></li>
+                        <li class="datos_perfil_sidebar">Vistas de tus publicaciones <span class="num_vistas_publicaciones">810</span></li>
+                        <li class="datos_perfil_sidebar">Tus conexiones <span class="num_conexiones">205</span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="enlaces_perfil">
+                    <a href="#" class="enlace_sidebar"><i class='bx bxs-bookmark-star lg_sd' style='color:#0851f4'  ></i>My items</a>
+                    <hr>
+                    <a href="#" class="enlace_sidebar"><i class='bx bxl-gitlab bx-tada bx-flip-horizontal' style='color:#f4c208' ></i>try premium </a>
+                </div>
             </div>
-            <div class="enlaces-perfil">
-                <a href="#"><img src="images/items.png">Mis artículos</a>
-                <a href="#"><img src="images/premium.png">Prueba Premium</a>
-            </div>
-            </div>
-
-            <div class="desarrollo-sidebar">
-                <h2>RECIENTE</h2>
+        
+            <div class="actividad_reciente">
+                <h2 class="titulo_seccion">RECIENTE</h2>
                 <a href="#"><i class='bx bx-time'></i> Desarrollador Web</a>
                 <a href="#"><i class='bx bx-time'></i> Interfaz de Usuario</a>
                 <a href="#"><i class='bx bx-time'></i> Aprendizaje en Línea</a>
                 <a href="#"><i class='bx bx-time'></i> Aprende en Línea</a>
                 <a href="#"><i class='bx bx-time'></i> Código Mejorado</a>
                 <a href="#"><i class='bx bx-time'></i> Aprendizaje en Grupo</a>
-                
-                <h2>GRUPOS</h2>
+        
+                <h2 class="titulo_seccion">GRUPOS</h2>
                 <a href="#"><i class='bx bx-male-female'></i> Grupos de Diseño Web</a>
                 <a href="#"><i class='bx bx-male-female'></i> Aprendices de HTML & CSS</a>
                 <a href="#"><i class='bx bx-male-female'></i> Grupo de Python & JavaScript</a>
                 <a href="#"><i class='bx bx-male-female'></i> Aprende a Programar en Línea</a>
-                
-                <h2>HASHTAGS</h2>
+        
+                <h2 class="titulo_seccion">HASHTAGS</h2>
                 <a href="#"><i class='bx bx-hash'></i> desarrollo_web</a>
                 <a href="#"><i class='bx bx-hash'></i> interfaz_usuario</a>
                 <a href="#"><i class='bx bx-hash'></i> aprendizaje_en_linea</a>
-
+        
                 <hr>
-                
-                <div class="enlace-descubrir-mas">
-                <a href="#">Descubre más</a>
+        
+                <div class="enlace_descubrir_mas">
+                    <a href="#" class="link_descubrir_mas">Descubre más</a>
                 </div>
             </div>
-        </aside>
+        </div>
+        
 
         <!-- Main -->
         <main class="contenido-principal">
-            <!-- Sección para crear una nueva publicación -->
+            
             <div class="crear-publicacion">
                 <div class="input-publicacion">
-                <img src="images/user-1.png" alt="foto perfil" class="img-perfil-publicacion">
-                <input type="text" placeholder="Inicia una publicación" class="input-publicacion-texto">
+                <img src="IMG/foto_perfil.jpg" alt="foto perfil" class="img-perfil-publicacion">
+                <input type="text" placeholder="Write a post" class="input-publicacion-texto">
                 </div>
                 <div class="acciones-publicacion">
-                <a href="#"><i class='bx bx-image'></i> Foto</a>
-                <a href="#"><i class='bx bx-video'></i> Video</a>
-                <a href="#"><i class='bx bx-calendar'></i> Evento</a>
-                <a href="#"><i class='bx bx-news'></i> post</a>
+                    <div class="accion-item foto">
+                    <a href="#" class="enlace_main"><i class='bx bxs-camera' style='color:#086af4'  ></i></i> Foto</a>
+                    </div>
+                    <div class="accion-item video">
+                    <a href="#" class="enlace_main"><i class='bx bx-video bx-flip-vertical' style='color:#0874f4' ></i> Video</a>
+                    </div>
+                    <div class="accion-item evento">
+                    <a href="#" class="enlace_main"><i class='bx bx-calendar' style='color:#0874f4' ></i> Evento</a>
+                    </div>
+                    <div class="accion-item post">
+                    <a href="#" class="link_post"><i class='bx bxs-send' style='color:#777' ></i> post</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Sección de publicaciones -->
+            <!-- contenedor feed -->
             <div class="feed-publicaciones">
-                <!-- Publicación individual -->
+
+                <!-- feed -->
                 <div class="publicacion">
                 <div class="encabezado-publicacion">
-                    <img src="images/user-2.png" alt="usuario" class="img-perfil-publicacion">
+                    <img src="IMG/perfil_2.jpg" alt="usuario" class="img-perfil-publicacion">
                     <div class="info-publicacion">
-                    <h3>Daniel Martinez</h3>
-                    <p>Desarrollador Full Stack</p>
-                    <span>2 horas · Floridablanca</span>
+                    <h3 class="texto_feed">Marcela Rodriguez</h3>
+                    <p class="parrafo_feed">Desarrollador Full Stack</p>
+                    <span class="span_feed">2 horas · Floridablanca</span>
                     </div>
                     <div class="opciones-publicacion">
                     <i class='bx bx-dots-horizontal-rounded'></i>
                     </div>
                 </div>
                 <div class="contenido-publicacion">
-                    <p>Estoy emocionado de anunciar mi nuevo proyecto web, ¡echen un vistazo!</p>
-                    <img src="images/project-example.png" alt="proyecto ejemplo" class="img-publicacion">
+                    <p class="parrafo_contenido">Estoy emocionado de anunciar mi nuevo proyecto web, en mi nueva empresa...</p>
+                    <img src="IMG/publicacion_1.jpg" alt="proyecto ejemplo" class="img-publicacion">
                 </div>
-                <div class="acciones-publicacion">
-                    <a href="#"><i class='bx bx-like'></i> Me gusta</a>
-                    <a href="#"><i class='bx bx-comment'></i> Comentar</a>
-                    <a href="#"><i class='bx bx-share'></i> Compartir</a>
+                <div class="reacciones_publicaciones">
+                    <a href="#"><i class='bx bx-like bx-flip-horizontal' style='color:#9eff00'></i></a>
+                    <a href="#"><i class='bx bxs-heart-circle bx-flip-horizontal' style='color:#ff0000' ></i></a>
+                    <a href="#"><i class='bx bx-link bx-flip-horizontal' undefined ></i></a>
+                    <span class="span_reacciones">Daniel Martinez and 10 others</span>
                 </div>
+                <hr>
+                <div class="comentarios_post">
+
+                    <img src="IMG/perfil_2.jpg" alt="usuario" class="img-perfil-publicacion img_perfil_post_comentarios">
+
+                        <div class="item_post">
+                            <a href="#" class="enlace_post"><i class='bx bx-like bx-flip-horizontal' style='color:#a7a7a7'></i> like</a>
+                        </div>
+
+                        <div class="item-post ">
+                            <a href="#" class="enlace_post"><i class='bx bxs-chat' style='color:#a7a7a7'  ></i> comments</a>
+                        </div>
+
+                        <div class="item-post ">
+                            <a href="#" class="enlace_post"><i class='bx bx-share' style='color:#a7a7a7' ></i> share</a>
+                        </div>
+
+                        <div class="item-post ">
+                            <a href="#" class="enlace_post"><i class='bx bxs-send' style='color:#a7a7a7' ></i> send</a>
+                        </div>
                 </div>
+
+                </div>
+
+                <div class="publicacion">
+                    <div class="encabezado-publicacion">
+                        <img src="IMG/foto_perfil3.jpg" alt="usuario" class="img-perfil-publicacion">
+                        <div class="info-publicacion">
+                        <h3 class="texto_feed">Juan Garcia</h3>
+                        <p class="parrafo_feed">IDOLOOOOO...</p>
+                        <span class="span_feed">5 horas · Giron</span>
+                        </div>
+                        <div class="opciones-publicacion">
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                        </div>
+                    </div>
+                    <div class="contenido-publicacion">
+                        <p class="parrafo_contenido">Estoy emocionado de anunciar mi nuevo proyecto web, en mi nueva empresa...</p>
+                        <img src="IMG/publicacion_2.jpg" alt="proyecto ejemplo" class="img-publicacion">
+                    </div>
+                    <div class="reacciones_publicaciones">
+                        <a href="#"><i class='bx bx-like bx-flip-horizontal' style='color:#9eff00'></i></a>
+                        <a href="#"><i class='bx bxs-heart-circle bx-flip-horizontal' style='color:#ff0000' ></i></a>
+                        <a href="#"><i class='bx bx-link bx-flip-horizontal' undefined ></i></a>
+                        <span class="span_reacciones">Daniel Martinez and 750 others</span>
+                    </div>
+                    <hr>
+                    <div class="comentarios_post">
+    
+                        <img src="IMG/foto_perfil3.jpg" alt="usuario" class="img-perfil-publicacion img_perfil_post_comentarios">
+    
+                            <div class="item_post">
+                                <a href="#" class="enlace_post"><i class='bx bx-like bx-flip-horizontal' style='color:#a7a7a7'></i> like</a>
+                            </div>
+    
+                            <div class="item-post ">
+                                <a href="#" class="enlace_post"><i class='bx bxs-chat' style='color:#a7a7a7'  ></i> comments</a>
+                            </div>
+    
+                            <div class="item-post ">
+                                <a href="#" class="enlace_post"><i class='bx bx-share' style='color:#a7a7a7' ></i> share</a>
+                            </div>
+    
+                            <div class="item-post ">
+                                <a href="#" class="enlace_post"><i class='bx bxs-send' style='color:#a7a7a7' ></i> send</a>
+                            </div>
+                    </div>
+
+
             </div>
         </main>
 
@@ -165,53 +246,53 @@
         <aside class="barra-lateral">
 
             <div class="noticias-tendencia">
-                <img src="images/more.png" class="icono-informacion">
-                <h3>Noticias en Tendencia</h3>
+                <img src="IMG/notices_aside.gif" class="icono-informacion">
+                <h3>"La desigualdad económica redefine el acceso a oportunidades para los jóvenes"</h3>
                 <a href="#">Alta demanda de mano de obra calificada</a>
-                <span>Hace 1d &middot; 10,934 lectores</span>
+                <span>Hace 1d - 10,934 lectores</span>
         
-                <a href="#">Carreras también crecen horizontalmente</a>
-                <span>Hace 1d &middot; 10,532 lectores</span>
+                <a href="#">Auge en la educación sobre inteligencia artificial generativa</a>
+                <span>Hace 1d - 10,532 lectores</span>
         
-                <a href="#">Menos visas de trabajo para EE.UU., más para UK</a>
-                <span>Hace 1d &middot; 10,451 lectores</span>
+                <a href="#">Las empresas invierten en salud mental ante el aumento de la depresión</a>
+                <span>Hace 1d - 10,451 lectores</span>
         
-                <a href="#">¿Más contrataciones = mayor confianza?</a>
-                <span>Hace 1d &middot; 10,122 lectores</span>
+                <a href="#">El futuro del trabajo se redefine: más empresas adoptan modelos híbridos</a>
+                <span>Hace 1d - 10,122 lectores</span>
         
-                <a href="#">Gautam Adani es el tercer más rico del mundo</a>
-                <span>Hace 1d &middot; 10,011 lectores</span>
+                <a href="#">Tecnologías sostenibles: el camino hacia un futuro ecológico</a>
+                <span>Hace 1d - 10,011 lectores</span>
         
                 <a href="#" class="enlace-leer-mas">Leer más</a>
             </div>
         
             <div class="fijo">
                 <div class="anuncio-lateral">
-                    <small>Anuncio &middot; &middot; &middot;</small>
+                    <span class="anuncio">Anuncio...</span>
                     <p>Domina los 5 principios del diseño web</p>
                     <div class="imagenes-anuncio">
-                        <img src="images/user-1.png">
-                        <img src="images/mi-logo.png">
+                        <img src="IMG/icon_aside1.jpg">
+                        <img src="IMG/icon_aside2.jpg">
                     </div>
-                    <b>Marca y Demanda en Xiaomi</b>
-                    <a href="#" class="enlace-anuncio">Aprender más</a>
+                    <span class="bb">Aprende a programar </span>
+                    <a href="#" class="enlace-anuncio">Más informacion</a>
                 </div>
         
                 <div class="enlaces-utiles">
-                    <a href="#">Sobre nosotros</a>
-                    <a href="#">Accesibilidad</a>
-                    <a href="#">Centro de Ayuda</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Publicidad</a>
-                    <a href="#">Obtener la App</a>
-                    <a href="#">Más información</a>
-                    <div class="mensaje-copyright">
-                        <img src="images/logo.webp">
-                        <p>Linkedup &#169; 2022. Todos los derechos reservados</p>
+                    <a class="links_aside" href="#">Sobre nosotros</a>
+                    <a class="links_aside" href="#">Accesibilidad</a>
+                    <a class="links_aside" href="#">Centro de Ayuda</a>
+                    <a class="links_aside" href="#">Política de Privacidad</a>
+                    <a class="links_aside" href="#">Publicidad</a>
+                    <a class="links_aside" href="#">Obtener la App</a>
+                    <a class="links_aside" href="#">Más información</a>
+                    <div class="mensaje">
+                        <img src="IMG/logo.webp" class="logo_mensaje">
+                        <p class="parrafo_mensaje">Linkedu 2022. Todos los derechos reservados</p>
                     </div>
                 </div>
             </div>
-        </aside>
+        </aside>      
     </section>
 
 
